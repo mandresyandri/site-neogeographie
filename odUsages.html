@@ -23,28 +23,8 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li class="current"><a href="index.html">Accueil</a></li>
-				<!--								<li>-->
-				<!--									<a href="#">Dropdown</a>-->
-				<!--									<ul>-->
-				<!--										<li><a href="#">Lorem dolor</a></li>-->
-				<!--										<li><a href="#">Magna phasellus</a></li>-->
-				<!--										<li><a href="#">Etiam sed tempus</a></li>-->
-				<!--										<li>-->
-				<!--											<a href="#">Submenu</a>-->
-				<!--											<ul>-->
-				<!--												<li><a href="#">Lorem dolor</a></li>-->
-				<!--												<li><a href="#">Phasellus magna</a></li>-->
-				<!--												<li><a href="#">Magna phasellus</a></li>-->
-				<!--												<li><a href="#">Etiam nisl</a></li>-->
-				<!--												<li><a href="#">Veroeros feugiat</a></li>-->
-				<!--											</ul>-->
-				<!--										</li>-->
-				<!--										<li><a href="#">Veroeros feugiat</a></li>-->
-				<!--									</ul>-->
-				<!--								</li>-->
-				<!--								<li><a href="left-sidebar.html">Left Sidebar</a></li>-->
-				<li><a href="odUsages.html">État des lieux</a></li>
+				<li><a href="index.html">Accueil</a></li>
+				<li class="current"><a href="odUsages.html">État des lieux</a></li>
 				<li><a href="odInteractif.html">Cartographie personnalisée</a></li>
 				<li><a href="odMeudon.html">Situation Meudon</a></li>
 			</ul>
@@ -71,65 +51,70 @@
 
 						<article>
 							<header>
-								<h2>Right Sidebar</h2>
-								<p>Sidebar on the right, content on the left.</p>
+								<h2>État des lieux </h2>
+								<p>Les usages et techniques utilisées de la cartographie interactive des villes française </p>
 							</header>
 
-							<span class="image featured"><img src="images/banner.jpg" alt="" /></span>
+							<span class="image featured"><img src="https://cdn.pixabay.com/photo/2017/08/25/06/54/street-map-2679271__340.jpg" alt="" /></span>
 
-							<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-								Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-								Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-								consequat etiam lorem ipsum dolor sit amet nullam.</p>
+							<p>Aujourd'hui, pour permettre aux administrés de mieux comprendre les politiques publiques, 
+								les Villes utilisent la cartographie rendre l'information accessible. Des solutions fusent et des techniques sont utilisées : Open Street Map, Google Map et Argis.</p>
 
-							<h3>And Yet Another Subheading</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-								justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-								ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-								vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-								Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-								rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-								Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-								Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
+							<h3 id="esmont">Enclos à Sapin Montpellier (Solution Open Street Map)</h3>
+							<p>Tous les ans, la Ville de Montpellier au même titre qu’une grande partie des Villes de France fait une opération de recyclage des sapins après la période de Noël. Pour cela, elle met en place des enclos à sapin pour permettre aux ménages de déposer leurs sapins pour leurs donner une seconde vie.  
+								Cette politique de gouvernance pilotée conjointement par les municipalités et la région. Dans le projet, la Ville et la Région disposent de données géolocalisant les enclos à sapin de la ville. Ces données sont diffusées sur le portail Open Data de la Ville puis mit en valeur sous forme de cartographie dans le but d’indiquer aux usagers chaque endroit.
+								Pour notre cas, la carte a été produite avec l’outil Open Source OpenStreetMap. Le fond de carte utilisé par l’auteur est OSM-Fr le format de base que propose OpenStreetMap. Nous disposons ici d’une carte interactive où au click, on peut afficher des informations pratiques sur les éléments représentés.  </p>
 
-							<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
-								quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
-								Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-								fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-								Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-								Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
+							<iframe width="100%" height="300px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/fr/map/parcs-a-sapins-2022_691606?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+							<ul>
+								<li style="list-style: none;">Titre : Cartographie interactive des enclos à Sapin de la Ville de Montpellier</li>
+								<li style="list-style: none;">Auteur : Ville de Montpellier</li>
+								<li style="list-style: none;"><a href="//umap.openstreetmap.fr/fr/map/parcs-a-sapins-2022_691606">Voir en plein écran</a></li>
+							</ul>
+
+							<h3 id="oppar">Offre de parking Paris (Solution ESRI de ARCGIS)</h3>
+							<p>Une autre solution est utilisée par les grandes Villes comme Paris. En effet pour la carte ci-dessus, 
+								on a une solution de carte qui est propulsée par ESRI d’ARCGIS. Cette carte intègre une fonctionnalité de 
+								légende beaucoup plus élaborée dans la mesure où la navigation est claire avec le pictogramme informations (i).
+								 De plus, la mise en place d’une fonctionnalité de recherche au même titre que ceux d’Issy-les-Moulineaux facilite 
+								 la navigation et la recherche d’adresse pour ceux qui le souhaitent. (Fonctionnalité qui est beaucoup mise en évidence 
+								 par la carte de Paris). 
+								Toutefois, cette carte n’est pas personnalisable par l’utilisateur. Ce qui fait qu’on reste limité à ce fond de carte.</p>
+
+							<img src="images/esriParis.png"/>
+							<ul>
+								<li style="list-style: none;">Titre : Parking de la Ville de Paris </li>
+								<li style="list-style: none;">Auteur : Ville de Paris</li>
+							</ul>
+
+							<h3 id="zbcorb">Zone de stationnement Corbeil Essonne (Solution Google Maps)</h3>
+							<p>Pour communiquer sur les zones de stationnement, certaines municipalités 
+								utilisent la cartographie interactive pour indiquer aux usagers les zones de stationnement. Ceci toujours 
+								dans le but de rendre plus facile l’usage du service public à travers l’usage de la carte comme outil de communication.
+								Concernant l’outil mis en place pour mettre en œuvre cette carte, la municipalité a utilisé l'outil Google Maps. 
+								Toutefois, on peut noter que le choix du fond de carte pour ce cas ne permet pas 
+								une lecture optimale des informations présentes sur la carte. En effet, il nous est difficile de lire certaines informations.  
+							</p>
+
+							<iframe src="https://www.google.com/maps/d/embed?mid=1czRyk1FqQPNnmzlud7JIkMzbAvTPLCUd&ehbc=2E312F" width="640" height="480"></iframe>
+							<ul>
+								<li style="list-style: none;">Titre : Zone bleue de stationnement  </li>
+								<li style="list-style: none;">Auteur : Ville de Corbeille Essonne</li>
+								<li style="list-style: none;"><a href="https://www.google.com/maps/d/viewer?mid=1czRyk1FqQPNnmzlud7JIkMzbAvTPLCUd&ll=48.60012332669928%2C2.4764709499999915&z=13">Voir en plein écran</a></li>
+							</ul>
 						</article>
 
 					</div>
 				</div>
 				<div class="col-4 col-12-narrower">
 					<div id="sidebar">
-
-						<!-- Sidebar -->
-
 						<section>
-							<h3>Just a Subheading</h3>
-							<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-								Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-								Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p>
-							<footer>
-								<a href="#" class="button">Continue Reading</a>
-							</footer>
-						</section>
-
-						<section>
-							<h3>Another Subheading</h3>
+							<h3>Dans cet article</h3>
 							<ul class="links">
-								<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-								<li><a href="#">Ornare in hendrerit in lectus</a></li>
-								<li><a href="#">Semper mod quis eget mi dolore</a></li>
-								<li><a href="#">Consequat etiam lorem phasellus</a></li>
-								<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-								<li><a href="#">Semper mod quisturpis nisi</a></li>
+								<li><a href="#esmont">Enclos à Sapin Montpellier</a></li>
+								<li><a href="#oppar">Offre de parking Paris</a></li>
+								<li><a href="#zbcorb">Zone Bleu Corbeille Essone</a></li>
 							</ul>
-							<footer>
-								<a href="#" class="button">More Random Links</a>
-							</footer>
 						</section>
 
 					</div>
@@ -138,75 +123,54 @@
 		</div>
 	</section>
 
-	<!-- Footer -->
-	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<section class="col-3 col-6-narrower col-12-mobilep">
-					<h3>Links to Stuff</h3>
-					<ul class="links">
-						<li><a href="#">Mattis et quis rutrum</a></li>
-						<li><a href="#">Suspendisse amet varius</a></li>
-						<li><a href="#">Sed et dapibus quis</a></li>
-						<li><a href="#">Rutrum accumsan dolor</a></li>
-						<li><a href="#">Mattis rutrum accumsan</a></li>
-						<li><a href="#">Suspendisse varius nibh</a></li>
-						<li><a href="#">Sed et dapibus mattis</a></li>
-					</ul>
-				</section>
-				<section class="col-3 col-6-narrower col-12-mobilep">
-					<h3>More Links to Stuff</h3>
-					<ul class="links">
-						<li><a href="#">Duis neque nisi dapibus</a></li>
-						<li><a href="#">Sed et dapibus quis</a></li>
-						<li><a href="#">Rutrum accumsan sed</a></li>
-						<li><a href="#">Mattis et sed accumsan</a></li>
-						<li><a href="#">Duis neque nisi sed</a></li>
-						<li><a href="#">Sed et dapibus quis</a></li>
-						<li><a href="#">Rutrum amet varius</a></li>
-					</ul>
-				</section>
-				<section class="col-6 col-12-narrower">
-					<h3>Get In Touch</h3>
-					<form>
-						<div class="row gtr-50">
-							<div class="col-6 col-12-mobilep">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-mobilep">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" class="button alt" value="Send Message" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</section>
-			</div>
+<!-- Footer -->
+<div id="footer">
+	<div class="container">
+		<div class="row">
+			<section class="col-3 col-6-narrower col-12-mobilep">
+				<h3>Lien utiles</h3>
+				<ul class="links">
+					<li><a href="https://www.etalab.gouv.fr/qui-sommes-nous/">Etalab</a></li>
+					<li><a href="https://www.opendatafrance.net/">Open Data France</a></li>
+					<li><a href="https://www.cada.fr/">Cada</a></li>
+				</ul>
+			</section>
+			<section class="col-3 col-6-narrower col-12-mobilep">
+				<h3>Appuie théorique</h3>
+				<ul class="links">
+					<li><a href="https://www.cairn.info/revue-internationale-d-intelligence-economique-2016-1-page-89.htm">Interview président OSM</a></li>
+					<li><a href="https://www.cairn.info/revue-documentaliste-sciences-de-l-information-2012-4-page-44.htm">Nouveaux défis des collectivités</a></li>
+					<li><a href="https://storymaps.arcgis.com/stories/bcedd1753e414b84a99e668cba0f7aa7">GPSO et Open Data</a></li>
+					<li><a href="https://www.cairn.info/revue-mouvements-2014-3-page-81.htm">Open Data : Samuel Goëta</a></li>
+				</ul>
+			</section>
+			<section class="col-6 col-12-mobilep">
+				<h3>Liens techniques</h3>
+				<ul class="links">
+					<li><a href="https://www.opendatasoft.com/fr/une-plateforme-pour-toutes-vos-experiences-data/?utm_source=adwords&utm_medium=cpc&utm_campaign=*FR+-+Data&utm_source=adwords&utm_term=open%20data%20soft&utm_medium=ppc&hsa_ver=3&hsa_kw=open%20data%20soft&hsa_tgt=kwd-399103161319&hsa_acc=6431142857&hsa_cam=18724958608&hsa_ad=631155695494&hsa_mt=e&hsa_grp=141528387534&hsa_src=g&hsa_net=adwords&gclid=CjwKCAiA2rOeBhAsEiwA2Pl7Q_NbBrztu5d8Qx-WwRRy3ppBVB0JBS9Kwtphx8On9UmvM5kyT9kcohoCOzsQAvD_BwE">Solution : Open Data Soft</a></li>
+					<li><a href="https://www.openstreetmap.fr/fonds-de-carte/">Fond de carte Open Street Map</a></li>
+					<li><a href="https://resources.arcgis.com/fr/help/getting-started/articles/026n00000014000000.htm">Qu'est-ce que Arcgis ?</a></li>
+				</ul>
+			</section>
 		</div>
+	</div>
 
-		<!-- Icons -->
+	<!-- Icons -->
 		<ul class="icons">
 			<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 			<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 			<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 			<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-			<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
 		</ul>
 
-		<!-- Copyright -->
+	<!-- Copyright -->
 		<div class="copyright">
 			<ul class="menu">
-				<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				<li>&copy; Mandresy ANDRI. All rights reserved</li><li></li>
 			</ul>
 		</div>
 
-	</div>
+</div>
 
 </div>
 
